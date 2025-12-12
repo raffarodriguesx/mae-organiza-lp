@@ -30,7 +30,7 @@ export const InteractionSection: React.FC<InteractionSectionProps> = ({
         
         <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
           {tags.map((tag, i) => (
-            <span key={i} className="px-6 py-3 rounded-full border border-brand-200 text-gray-600 hover:border-brand-500 hover:text-brand-600 transition-colors cursor-default text-sm md:text-base">
+            <span key={i} className="px-6 py-3 rounded-full border border-brand-600 text-gray-600 hover:border-brand-500 hover:text-brand-600 transition-colors cursor-default text-sm md:text-base">
               {tag}
             </span>
           ))}

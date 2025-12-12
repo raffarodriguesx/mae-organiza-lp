@@ -27,8 +27,8 @@ export const ProfessionalPanel: React.FC<ProfessionalPanelProps> = ({
         <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
           {description}
         </p>
-        <div className="rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
-          <img src={imageSrc} alt="Painel Dashboard" className="w-full" />
+        <div className="rounded-3xl shadow-2xl overflow-hidden border-4 border-white h-64 md:h-96 bg-gray-200 flex items-center justify-center">
+          <span className="text-gray-500 font-bold text-xl uppercase tracking-widest">[Foto Pendente]</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
           {features.map((feature, index) => (

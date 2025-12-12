@@ -12,6 +12,7 @@ interface FeatureStripProps {
   ctaText?: string;
   colorClass?: string;
   isVideo?: boolean;
+  showPlaceholder?: boolean;
 }
 
 export const FeatureStrip: React.FC<FeatureStripProps> = ({
@@ -23,7 +24,8 @@ export const FeatureStrip: React.FC<FeatureStripProps> = ({
   reversed = false,
   ctaText = "Começar Agora",
   colorClass = "text-brand-600",
-  isVideo = false
+  isVideo = false,
+  showPlaceholder = false
 }) => {
   return (
     <section className="py-20 md:py-32 overflow-hidden bg-white">
@@ -65,7 +67,11 @@ export const FeatureStrip: React.FC<FeatureStripProps> = ({
           {/* Visual Content */}
           <div className="flex-1 w-full relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white bg-gray-100">
-               {isVideo ? (
+               {showPlaceholder ? (
+                  <div className="aspect-video w-full bg-gray-200 flex items-center justify-center">
+                     <span className="text-gray-500 font-bold text-xl uppercase tracking-widest">[Foto Pendente]</span>
+                  </div>
+               ) : isVideo ? (
                   <div className="aspect-video w-full bg-gray-900 flex items-center justify-center text-white/50 relative group cursor-pointer">
                      <img src={imageSrc} alt={title} className="w-full h-full object-cover opacity-60" />
                      <div className="absolute inset-0 flex items-center justify-center">
