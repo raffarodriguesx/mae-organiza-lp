@@ -33,6 +33,14 @@ const config: Config = {
           DEFAULT: '#E9ECEF', // Cor para bordas, divisórias ou fundos sutis
           foreground: '#6C757D', // Cor para textos secundários, placeholders
         },
+        brand: {
+          50: '#F5F3FF',
+          100: '#EFECF2',
+          200: '#D6CEDE',
+          500: '#7E6890',
+          600: '#5E496F',
+          700: '#4A3957',
+        },
       },
       fontFamily: {
         heading: ['var(--font-figtree)', 'sans-serif'],
