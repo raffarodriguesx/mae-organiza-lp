@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { SectionTitle } from './ui/SectionTitle';
 import { FaqItem } from '../types';

@@ -57,7 +57,7 @@ export const Testimonials: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-700 text-sm mb-6 leading-relaxed min-h-[80px]">
-                "{t.content}"
+                &quot;{t.content}&quot;
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                 <img 
